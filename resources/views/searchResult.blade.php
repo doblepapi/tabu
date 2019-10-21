@@ -12,26 +12,26 @@
     padding: 0%;
   }
   
-  .zooma{
+  .zoom{
     background-color: green;
     transition: transform .2s;
     width: 100px;
     height: 100px;
-
     margin: 1%;
-
     border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .zoom a{
+      position: relative;
+      top: 150px;
   }
   .zoom:hover {
     -ms-transform: scale(2);
     -webkit-transform: scale(2);
     transform: scale(2);
   }
-  .zooma:hover {
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2);
-    transform: scale(0.5);
-  }
+
   #cero{
       position: absolute;
       left: 40%;
@@ -88,7 +88,7 @@
 <body>
 
 
-    <div class="zooma" id="cero"></div>
+    <div class="zoom" id="cero"><h1><a href="">consectetur adipiscing</a></h1></div>
     <div class="zoom" id="uno"></div>
     <div class="zoom" id="dos"></div>
     <div class="zoom" id="tres"></div>
