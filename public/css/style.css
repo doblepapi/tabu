@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .zoom {
+    padding: 100px;
+    background-color: green;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(3.5);
+    -webkit-transform: scale(3.5);
+    transform: scale(2.5); 
+  }
