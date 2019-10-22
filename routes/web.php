@@ -19,11 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/searching', function () {
-	return view('searching');
-});
-
 Route::get('/result', function () {
 	return view('searchResult');
 });
+
+Route::get('/search', function () {
+	return view('search');
+});
+
+
+
 
