@@ -22,3 +22,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/result', function () {
 	return view('searchResult');
 });
+
+Route::get('/search', function () {
+	return view('search');
+});
+
+
+
+
