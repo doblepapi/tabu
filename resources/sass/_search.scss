@@ -1,10 +1,41 @@
 #fakebox-container{
-    margin: 0 auto 0 auto;
     min-width: 410px;
-    width: var(--content-width);
-
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 215px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
-#fakebox
+.fakebox{
+    max-width: 663px;
+    margin: auto;
+    position: relative;
+}
+.fakebox-search-icon{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 28px;
+    height: 44px;
+    left: 29px;
+        i.fas.fa-search{
+            color:white;
+        }
+}
+
+#fakebox-input
 {
-    background:#7d314c;
+    background: $inputColor;
+    border-radius: 40px;
+    border: 0;
+    box-shadow: 0 1px 6px rgba(66, 5, 19, 0.28);
+    height: 54px;
+    opacity: 1;
+    padding-left: 66px;
+    
+
 }

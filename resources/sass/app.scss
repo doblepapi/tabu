@@ -8,3 +8,12 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import 'register';
+
+@import'navbar';
+
+@import'search';
+
+.py-4.content{
+    min-height: 100vh;
+    position: relative;
+}
