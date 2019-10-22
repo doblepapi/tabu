@@ -43,7 +43,7 @@
                             <label for="age" class="col-md-4 col-form-label text-md-right">{{ __('Birth year') }}</label>
 
                             <div class="col-md-6">
-                            <input type="number" name="nacido" min="1900">
+                            <input type="number" name="age" min="1930" class="form-control">
                                 @error('age')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -75,27 +75,31 @@
                         </div>
 
                         <i class="fas fa-h2    ">Intereses</i>
+                        <div class="col-md-7">
                         <div class="form-check">
                             <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                              <input type="checkbox" class="form-check-input" name="salud" id="" value="1" checked>
                                Salud
                             </label>
                           </div>
+                        </div>  
+                        <div class="col-md-7">
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                              <input type="checkbox" class="form-check-input" name="eventos" id="" value="2" checked>
                                Eventos
                             </label>
                           </div>
+                        </div>
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                              <input type="checkbox" class="form-check-input" name="educacion" id="" value="3" checked>
                                Educacion
                             </label>
                           </div>
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                              <input type="checkbox" class="form-check-input" name="sexo" id="" value="4" checked>
                                Sexo
                             </label>
                           </div>
