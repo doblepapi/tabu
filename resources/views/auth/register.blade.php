@@ -85,7 +85,7 @@
                             
                             <label class="form-check-label">
                                 @foreach($interests as $interest=>$category)
-                                <input type="checkbox" class="form-check-input" id="categories" name="interest['{{$interest}}']" value="{{$category}}"> {{$category}} <br>
+                                <input type="checkbox" class="form-check-input" id="categories" name="interest[{{$interest}}]" value="{{$category}}"> {{$category}} <br>
                                 @endforeach
                             </label>
                         </div>
