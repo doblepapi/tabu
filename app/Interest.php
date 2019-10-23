@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Symfony\Component\HttpFoundation\Request;
 
 class Interest extends Model
 {
@@ -13,4 +14,5 @@ class Interest extends Model
     public static function getInterest() {
         return Self::all()->pluck('category','id');
     }
+
 }
