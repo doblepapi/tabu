@@ -10,7 +10,7 @@
     @foreach($modelSearchResults as $searchResult)
 
         <ul>
-        <li><a href="{{$searchResult->url}}">{{$searchResult->title}}</a></li>
+        <li><p href="{{$searchResult->url}}">{{$searchResult->title}}</p></li>
         </ul>
     @endforeach
   @endforeach
