@@ -78,14 +78,14 @@
                         <div class="form-check">
 
                             <?php
-                            use App\Interest;
-                            $interests = Interest::getInterest() 
+                                use App\Interest;
+                                $interests = Interest::getInterest();
                             ?>
 
                             <label class="form-check-label">
                             @foreach($interests as $interest=>$category)
-                                <input type="checkbox" class="form-check-input" id="categories" value="interest_id"> {{$category}} <br> 
-                                @endforeach
+                                <input type="checkbox" class="form-check-input" id="categories" name="interest['{{$interest}}']" value="{{$category}}"> {{$category}} <br>
+                            @endforeach
                             </label>
 
                         </div>
