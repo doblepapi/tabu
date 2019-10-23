@@ -23,10 +23,9 @@ Route::get('/result', function () {
 	return view('searchResult');
 });
 
-Route::get('/search', function () {
-	return view('search');
-});
+Route::any('/searchIo', 'PostController@search');
 
+Route::get('/search','PostController@index');
 
 
 
