@@ -10653,7 +10653,11 @@ a.text-dark:focus {
 }
 
 .navbar-brand {
-  color: white !important;
+  color: #7d314c !important;
+}
+
+.nav-link {
+  color: #7d314c !important;
 }
 
 #fakebox-container {
@@ -10685,7 +10689,7 @@ a.text-dark:focus {
 }
 
 .fakebox-search-icon i.fas.fa-search {
-  color: white;
+  color: #fdace7;
 }
 
 #fakebox-input {
