@@ -4,13 +4,13 @@
 
 <div class="buscarResultado">
 
-    @foreach($searchResult->groupByType() as Stype=>$modelSearchResults)
+    @foreach($searchResult->groupByType() as $type=>$modelSearchResults)
 
     <h2>{{ucfirst($type)}}</h2>
     @foreach($modelSearchResults as $searchResult)
 
         <ul>
-        <li><a href="{{$searchResult->url}}"><{{$searchResult->title}}</a></li>
+        <li><a href="{{$searchResult->url}}">{{$searchResult->title}}</a></li>
         </ul>
     @endforeach
   @endforeach

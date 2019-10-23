@@ -13,7 +13,7 @@ class Post extends Model implements Searchable
 {
     public function getSearchResult():SearchResult
     {
-        $url = route('searchResult', $this->id);
+        $url = route('searchIo', $this->id);
         return new SearchResult(
             $this,
             $this->body,
