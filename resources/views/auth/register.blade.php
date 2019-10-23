@@ -74,20 +74,22 @@
                             </div>
                         </div>
 
-                        <i class="fas fa-h2">Selecciona al menos un interés</i>
+                        <i class="fas fa-h2 selection-interest">Selecciona al menos un interés</i>
                         <div class="form-check">
 
                             <?php
                             use App\Interest;
                             $interests = Interest::getInterest() 
                             ?>
-
-                            <label class="form-check-label">
+                            <ul class="intereses">
                             @foreach($interests as $interest=>$category)
-                                <input type="checkbox" class="form-check-input" id="categories" value="interest_id"> {{$category}} <br> 
-                                @endforeach
-                            </label>
-
+                            <li>
+                                <label for="{{$category}}" class="form-check-label"></label>
+                                <input type="checkbox" class="form-check-input" id="{{$category}}" value="interest_id"> {{$category}} <br> 
+                            </li>
+                            
+                            @endforeach
+                            </ul>
                         </div>
 
                         <div class="form-group row mb-0">
