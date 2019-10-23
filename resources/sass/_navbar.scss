@@ -1,6 +1,9 @@
 .navbar{
-    background-color: #fdace7 !important;
+    background-color: $navbarColor!important;
 }
 .navbar-brand{
-    color: white;
+    color: $inputColor !important;
+}
+.nav-link{
+    color: $inputColor !important;
 }
