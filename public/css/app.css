@@ -10653,7 +10653,7 @@ a.text-dark:focus {
 }
 
 .navbar-brand {
-  color: white;
+  color: white !important;
 }
 
 #fakebox-container {
