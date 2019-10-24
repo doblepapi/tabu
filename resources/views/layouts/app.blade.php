@@ -72,15 +72,10 @@
                 </div>
             </div>
         </nav>
-        
 
         <main class="py-4 content">
             @yield('content')
         </main>
     </div>
-
-    <script src="{{ asset('js/map.js') }}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUWJT3w_uxuI-QgUfm257YVvUN5DYyjfc&callback=window.initMap"></script>
-
 </body>
 </html>
