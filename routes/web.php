@@ -23,12 +23,10 @@ Route::get('/result', function () {
 	return view('searchResult');
 });
 
-Route::any('/searchIo', 'PostController@search');
-
-Route::get('/results', 'PostController@show')->name('searchIo');
-
-Route::get('/search','PostController@index');
-
-Route::get('/map', function () {
-	return view('map');
+Route::get('/search', function () {
+	return view('search');
 });
+
+
+
+
