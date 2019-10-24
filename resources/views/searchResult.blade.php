@@ -128,14 +128,15 @@
     </svg>
 
 
-    <div class="zoom" id="cero"><h3>consectetur adipiscing</h3></div>
+    <div class="zoom" id="cero"><h1>Definicion</h3></div>
     <div class="zoom" id="uno"><h2>consectetur adipiscing</<h3></div>
     <div class="zoom" id="dos"><h3>consectetur adipiscing</h3></div>
     <div class="zoom" id="tres"><h3>consectetur adipiscing</h3></div>
     <div class="zoom" id="cuatro"><h3>consectetur adipiscing</h3></div>
     <div class="zoom" id="cinco"><h3>consectetur adipiscing</h3></div>
     <div class="zoom" id="seis"><h2>consectetur adipiscing</h3></div>
-
+    
+    
     
 
     <!-- The Modal -->
