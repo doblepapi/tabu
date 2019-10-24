@@ -1,4 +1,6 @@
 
+    
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,7 +130,7 @@
     </svg>
 
 
-    <div class="zoom" id="cero"><h1>Definicion</h3></div>
+  <div class="zoom" id="cero"><h1>$searchResult</h3></div>
     <div class="zoom" id="uno"><h2>consectetur adipiscing</<h3></div>
     <div class="zoom" id="dos"><h3>consectetur adipiscing</h3></div>
     <div class="zoom" id="tres"><h3>consectetur adipiscing</h3></div>
@@ -144,7 +146,7 @@
     
       <!-- Modal content -->
       <div class="modal-content">
-        <p>Lorem fistrum ese hombree ahorarr ese que llega de la pradera la caidita a peich. Se calle ustée papaar papaar no puedor mamaar torpedo ese que llega está la cosa muy malar. Se calle ustée se calle ustée diodeno jarl llevame al sircoo ese que llega de la pradera torpedo va usté muy cargadoo.</p>
+        <p><?php echo Section::yield('searchResult') ?></p>
       </div>
     
     </div>
