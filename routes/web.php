@@ -19,11 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('search');
 
-Route::get('/result', function () {
-	return view('searchResult');
-});
-
-Route::any('/searchIo', 'PostController@search');
+Route::post('/searchIo', 'PostController@search');
 
 Route::get('/results', 'PostController@show')->name('searchIo');
 
