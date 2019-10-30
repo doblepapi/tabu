@@ -74,7 +74,7 @@
                             </div>
                         </div>
 
-                        <i class="fas fa-h2">Selecciona al menos un interés</i>
+                        <i class="fas fa-h2 selection-interest">Selecciona al menos un interés</i>
                         <div class="form-check">
 
                             <?php

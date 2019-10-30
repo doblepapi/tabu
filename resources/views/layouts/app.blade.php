@@ -13,7 +13,8 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com"><script src="https://kit.fontawesome.com/9d86a2c29d.js" crossorigin="anonymous"></script>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/9d86a2c29d.js"crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     <!-- Styles -->

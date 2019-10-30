@@ -10644,8 +10644,40 @@ a.text-dark:focus {
   }
 }
 
-.form-check label {
-  background: black;
+.selection-interest {
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 5.25rem;
+  top: 9px;
+}
+
+.offset-md-4 {
+  margin: 5px;
+  left: 310px;
+}
+
+.intereses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.intereses li {
+  min-width: 100px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #7d314c;
+  border-color: #7d314c;
+}
+
+.btn-link {
+  color: #7d314c;
 }
 
 .navbar {
@@ -10705,5 +10737,15 @@ a.text-dark:focus {
 .py-4.content {
   min-height: 100vh;
   position: relative;
+}
+
+.card {
+  background-color: #fdace7;
+  border: 1px solid #7d314c;
+}
+
+.card-header {
+  background-color: rgba(253, 2, 78, 0.03);
+  border-bottom: 1px solid #7d314c;
 }
 
