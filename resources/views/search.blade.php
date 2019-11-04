@@ -8,4 +8,8 @@
     </form>
 </div>
 
+<!-- @can('update',$post)
+
+@endcan -->
+
 @endsection
