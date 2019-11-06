@@ -14,9 +14,8 @@
     </form>
     </div>
 
-<!-- @can('update',$post)
+{{-- <!-- @can('update',$post)
 
-@endcan -->
+@endcan --> --}}
 
-@endsection
     @endsection

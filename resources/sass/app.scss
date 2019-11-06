@@ -16,6 +16,8 @@
 //VIEW CSS SEARCH
 @import'search';
 
+@import'result';
+
 //CSS GENERAL
 
 .py-4.content{
@@ -25,6 +27,7 @@
 .card{
     background-color: $searchColor;
     border: 1px solid $inputColor;
+    height: 200px;
 }
 .card-header{
     background-color: rgba(253, 2, 78, 0.03);

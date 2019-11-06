@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('search');
 });
 
+Route::get('/resulta', function () {
+    return view('searchresult');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('search');
