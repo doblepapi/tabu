@@ -1,3 +1,23 @@
+
+#TABU
+
+This application is created as a project for Factoria F5. The aim of the app is to create more than a search, our aim is to create an free experience for @ll. We will make availabe free content about diferent subjects related to sexuality and gender with the aim to inform and educate users about it. 
+
+Once you have the project be aware you should do the following comands:
+
+composer update
+
+then you should do a duplicate of the .env.example and call it .env. Once you have that file check the database has the name equal to the one in your php my admin and then generate the key with:
+
+php artisan  key:generate
+
+Now you are ready to go.
+
+Best regards, Manuela, Natalia, Jaison, Isa and Nuria
+
+
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
