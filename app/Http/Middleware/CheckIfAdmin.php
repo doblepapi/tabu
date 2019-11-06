@@ -15,6 +15,9 @@ class CheckIfAdmin
      */
     public function handle($request, Closure $next)
     {
+        if(Auth::user()-> admin == true):
+            return redirect('home');
+        endif;
         return $next($request);
     }
 }
