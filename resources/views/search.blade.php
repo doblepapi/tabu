@@ -4,16 +4,18 @@
 
 <div id="fakebox-container">
     <div class="fakebox">
-        <form method="POST" action="/searchIo">
+        <form action="/searchIo" method="post">
             {{csrf_field()}}
-        @csrf
-        <div class="fakebox-search-icon">
-            <i class="fas fa-search"></i>
-        </div>
-        <input id="fakebox-input" placeholder="Busca en Tabu" name="query" type="search" class="form-control" autocomplete="off">
-    </form>
+            @csrf
+            <div class="fakebox-search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="search" placeholder="Busca en Tabu" class="form-control" name="query" id="fakebox-input" autocomplete="off">
+            </form>
+    
     </div>
-
+</div>
+    
 {{-- <!-- @can('update',$post)
 
 @endcan --> --}}

@@ -16,7 +16,7 @@ class PostController extends Controller
         $searchResult = (new  Search())
             ->registerModel(Post::class, 'title', 'body', 'id')
             ->perform($request->input('query'));    
-        return view('searchIo', compact('searchResult'));
+        return view('searchresult', compact('searchResult'));
     }
 
     public function index()
@@ -53,7 +53,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return view('searchresult', compact('searchResult'));
     }
 
     /**

@@ -10763,6 +10763,18 @@ a.text-dark:focus {
   width: 80%;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .py-4.content {
   min-height: 100vh;
   position: relative;

@@ -27,6 +27,8 @@ Route::post('/searchIo', 'PostController@search');
 
 Route::get('/results', 'PostController@show')->name('searchIo');
 
+Route::get('/definicion, PostController@show')->name('');
+
 Route::get('/search','PostController@index');
 
 Route::get('/map', function () {
