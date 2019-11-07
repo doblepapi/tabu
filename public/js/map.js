@@ -17,13 +17,13 @@
         lat: event.latLng.lat(),
         lng: event.latLng.lng(),
       };
-      // excribir mensaje de donde se va a poner el punto
+      // Escribir mensaje de donde se va a poner el punto
       console.log('Add point to', event.latLng.lat(), event.latLng.lng());
       // Crear un marcador con la ubicación
       const marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        title: '' + myLatLng.lat + ', ' + myLatLng.lng + '',
+        title: '' + myLatLng.lat + ',' + myLatLng.lng + '',
         animation: google.maps.Animation.DROP,
       });
       // cambiar el icono
