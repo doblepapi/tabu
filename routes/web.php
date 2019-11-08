@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('search');
 });
 
+Route::get('/resulta', function () {
+    return view('searchresult');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('search');
@@ -22,6 +26,8 @@ Route::get('/home', 'HomeController@index')->name('search');
 Route::post('/searchIo', 'PostController@search');
 
 Route::get('/results', 'PostController@show')->name('searchIo');
+
+Route::get('/definicion, PostController@show')->name('');
 
 Route::get('/search','PostController@index');
 
