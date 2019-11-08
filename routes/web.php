@@ -26,5 +26,7 @@ Route::get('/results', 'PostController@show')->name('searchIo');
 Route::get('/search','PostController@index');
 
 Route::get('/map', function () {
-	return view('map');
+    return view('map');
+
+Route::resource('events','EventsController');
 });
