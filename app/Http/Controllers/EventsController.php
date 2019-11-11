@@ -14,7 +14,8 @@ class EventsController extends Controller
      */
     public function index()
     {
-        //
+        $events = Event::latest();
+        return view('events.index', compact('events'));
     }
 
     /**
@@ -24,7 +25,7 @@ class EventsController extends Controller
      */
     public function create()
     {
-        //
+        return view('events.create');
     }
 
     /**
@@ -35,7 +36,17 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'event_date' => 'required',
+            'location' => 'required',
+            'value' => 'required'
+        ]);
+
+        Event::create($request->all());
+
+        return redirect()->route('events.index')
+            ->with('success', 'Event created successfully.');
     }
 
     /**
@@ -46,7 +57,7 @@ class EventsController extends Controller
      */
     public function show(Event $event)
     {
-        //
+        return view('events.show', compact('event'));
     }
 
     /**
@@ -55,9 +66,8 @@ class EventsController extends Controller
      * @param  \App\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event)
-    {
-        //
+    public function edit(Event $event) {
+        return view('events.edit', compact('event'));
     }
 
     /**
@@ -67,9 +77,18 @@ class EventsController extends Controller
      * @param  \App\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event)
-    {
-        //
+    public function update(Request $request, Event $event) {
+        $request->validate([
+            'title' => 'required',
+            'event_date' => 'required',
+            'location' => 'required',
+            'value' => 'required'
+        ]);
+
+        $event->update($request->all());
+
+        return redirect()->route('events.index')
+            ->with('success', 'Event update successfully.');
     }
 
     /**
@@ -78,8 +97,10 @@ class EventsController extends Controller
      * @param  \App\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event)
-    {
-        //
+    public function destroy(Event $event) {
+        $event->delete();
+
+        return redirect()->route('events.index')
+            ->with('success', 'Event deleted successfully.');
     }
 }
