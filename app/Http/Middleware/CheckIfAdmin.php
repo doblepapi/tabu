@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Auth;
 
 class CheckIfAdmin
 {
@@ -15,9 +16,13 @@ class CheckIfAdmin
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::user()-> userType == true):
-            return redirect('search');
-        endif;
+        
+        if(Auth::user()->userType == true){
+        
+            return redirect('/admin');
+        }
+           
+    
         return $next($request);
     }
 }

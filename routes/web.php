@@ -15,11 +15,16 @@ Route::get('/', function () {
     return view('search');
 });
 
+
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('search');
+Route::get('/home', 'HomeController@index')->middleware('isadmin');
 
-Route::get('/admin/{userType}', 'AdminController@show');
+
+Route::get('/admin', function () {
+	return view('adminView');
+});
 
 Route::post('/searchIo', 'PostController@search');
 
