@@ -15,8 +15,8 @@ class PostController extends Controller
     {
         $searchResult = (new  Search())
             ->registerModel(Post::class, 'title', 'body', 'id')
-            ->perform($request->input('query'));    
-        return view('searchResult', compact('searchResult'));
+            ->perform($request->input('query'));  
+        return view('searchResult', compact('searchResult'), ['palabra'=>$request->input('query')]);
     }
 
     public function index()

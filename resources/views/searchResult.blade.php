@@ -7,8 +7,8 @@
     <div id="eventos" class="col card"><a href={{"/"}}>Eventos</a></div>
     <div id="blog" class="col card"><a href={{"/"}}>Blog</a></div>
     <div id="articulos" class="col card"><a href={{"/"}}>Articulos</a></div>
-    <div id="sexo" class="col card"><a href={{"/"}}>Sexo</a></div>
     </div>
   </div>
+  {{$palabra}}
   {{{$searchResult}}}
 @endsection
