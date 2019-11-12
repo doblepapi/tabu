@@ -16,7 +16,6 @@ Route::get('/', function () {
 });
 
 
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->middleware('isadmin');
@@ -29,6 +28,8 @@ Route::get('/admin', function () {
 Route::post('/searchIo', 'PostController@search');
 
 Route::get('/results', 'PostController@show')->name('searchIo');
+
+Route::get('/definicion, PostController@show')->name('');
 
 Route::get('/search','PostController@index');
 

@@ -16,17 +16,22 @@
 //VIEW CSS SEARCH
 @import'search';
 
+@import'result';
+
 //CSS GENERAL
 
-.py-4.content{
+.py-4.content {
     min-height: 100vh;
     position: relative;
 }
-.card{
+
+.card {
     background-color: $searchColor;
     border: 1px solid $inputColor;
+    height: 200px;
 }
-.card-header{
-    background-color: rgba(253, 2, 78, 0.03);
+
+.card-header {
+    background-color: #fd024e08;
     border-bottom: 1px solid $inputColor;
 }
