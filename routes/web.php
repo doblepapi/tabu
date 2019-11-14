@@ -29,6 +29,8 @@ Route::get('/admin/article', function () {
 	return view('adminArticle');
 });
 
+Route::resource('/articles', 'ArticuloController');
+
 Route::post('/searchIo', 'PostController@search');
 
 Route::get('/results', 'PostController@show')->name('searchIo');
