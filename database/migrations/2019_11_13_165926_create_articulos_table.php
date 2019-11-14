@@ -20,6 +20,7 @@ class CreateArticulosTable extends Migration
             $table->string('link');
             $table->string('author');
             $table->string('year');
+            $table->text('keyWords');
             $table->timestamps();
         });
     }
