@@ -1,37 +1,8 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
-//VIEW CSS REGISTER
-@import 'register';
-
-//VIEW CSS NAVBAR
-@import'navbar';
-
-//VIEW CSS SEARCH
-@import'search';
-
-@import'result';
-
-//CSS GENERAL
-
-.py-4.content {
-    min-height: 100vh;
-    position: relative;
-}
-
-.card {
-    background-color: $searchColor;
-    border: 1px solid $inputColor;
-    height: 200px;
-}
-
-.card-header {
-    background-color: #fd024e08;
-    border-bottom: 1px solid $inputColor;
-}
