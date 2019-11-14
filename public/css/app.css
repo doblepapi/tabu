@@ -10734,6 +10734,15 @@ a.text-dark:focus {
   padding-left: 66px;
 }
 
+.busca {
+  color: white;
+}
+
+.busca::-webkit-input-placeholder,
+.busca:focus-within {
+  color: white;
+}
+
 #definicion {
   background-color: #6574cd;
 }
@@ -10779,13 +10788,13 @@ button {
   border: 2px solid black;
   background-color: #f66d9b;
   margin: 10px;
+  font-weight: bold;
 }
 
 .botonCuadrado {
   width: 150px;
   height: 150px;
   border-radius: 10px;
-  font-weight: bold;
 }
 
 .py-4.content {

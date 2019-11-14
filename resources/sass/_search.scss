@@ -38,3 +38,9 @@
     opacity: 1;
     padding-left: 66px;
 }
+.busca{
+    color:white;
+    &::-webkit-input-placeholder, &:focus-within{
+        color:white;
+    }
+}
