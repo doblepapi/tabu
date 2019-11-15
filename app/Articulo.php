@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Articulo extends Model
 {
-    protected $filable=['title','textArticle'];
+    protected $filable=['title','resumen'];
 }

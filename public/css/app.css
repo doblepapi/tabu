@@ -10797,6 +10797,15 @@ button {
   border-radius: 10px;
 }
 
+.busca {
+  color: black;
+}
+
+.busca::-webkit-input-placeholder,
+.busca:focus-within {
+  color: #f66d9b;
+}
+
 .py-4.content {
   min-height: 100vh;
   position: relative;
