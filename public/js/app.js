@@ -1862,11 +1862,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
-});
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -37183,11 +37185,24 @@ var render = function() {
           _c(
             "div",
             { staticClass: "modal-header" },
-            [_vm._t("header", [_vm._v("default header")])],
+            [
+              _vm._t("header", [
+                _vm._v("\n              default header\n            ")
+              ])
+            ],
             2
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "modal-body" }, [_vm._t("body")], 2),
+          _c(
+            "div",
+            { staticClass: "modal-body" },
+            [
+              _vm._t("body", [
+                _vm._v("\n              default body\n            ")
+              ])
+            ],
+            2
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -37204,7 +37219,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("OK")]
+                  [_vm._v("\n                OK\n              ")]
                 )
               ])
             ],
