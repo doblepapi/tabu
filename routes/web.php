@@ -28,5 +28,5 @@ Route::get('/search','PostController@index');
 Route::get('/map', function () {
     return view('map');
 
-// Route::resource('events','EventsController');
+Route::resource('/event','EventController');
 });
