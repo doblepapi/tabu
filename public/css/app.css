@@ -10644,8 +10644,6 @@ a.text-dark:focus {
   }
 }
 
-<<<<<<< HEAD
-=======
 .selection-interest {
   font-family: "Montserrat", sans-serif;
 }
@@ -10736,6 +10734,15 @@ a.text-dark:focus {
   padding-left: 66px;
 }
 
+.busca {
+  color: white;
+}
+
+.busca::-webkit-input-placeholder,
+.busca:focus-within {
+  color: white;
+}
+
 #definicion {
   background-color: #6574cd;
 }
@@ -10786,6 +10793,28 @@ a:hover {
   width: 80%;
 }
 
+button {
+  border: 2px solid black;
+  background-color: #f66d9b;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.botonCuadrado {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.busca {
+  color: black;
+}
+
+.busca::-webkit-input-placeholder,
+.busca:focus-within {
+  color: #f66d9b;
+}
+
 .py-4.content {
   min-height: 100vh;
   position: relative;
@@ -10802,4 +10831,3 @@ a:hover {
   border-bottom: 1px solid #ff0751;
 }
 
->>>>>>> Jason

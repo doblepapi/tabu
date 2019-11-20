@@ -11,3 +11,10 @@ button{
     border-radius: 10px;
     
 }
+
+.busca{
+    color:black;
+    &::-webkit-input-placeholder, &:focus-within{
+        color:$pink;
+    }
+}
