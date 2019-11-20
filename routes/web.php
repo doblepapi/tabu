@@ -35,16 +35,16 @@ Route::post('/searchIo', 'PostController@search');
 
 Route::get('/results', 'PostController@show')->name('searchIo');
 
-Route::get('/definicion, PostController@show')->name('');
+Route::resource('/post', 'PostController');
 
-Route::get('/search','PostController@index');
+
 
 Route::get('/map', function () {
 	return view('map');
 });
-
+/* 
 Route::post('/places/store', 'UserController@store');
 Route::post('/places/update/{id}', 'UserController@update');
 Route::get('/places/destroy/{id}', 'UserController@destroy');
-
+ */
 Route::resource('/places', 'PlaceController');

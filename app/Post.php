@@ -11,6 +11,8 @@ use Spatie\Searchable\SearchResult;
 
 class Post extends Model implements Searchable
 {
+    protected $filable=['title','body'];
+
     public function getSearchResult():SearchResult
     {
         $url = route('searchIo', $this->id);

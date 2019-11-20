@@ -16,14 +16,13 @@ class PostController extends Controller
         $searchResult = (new  Search())
             ->registerModel(Post::class, 'title', 'body', 'id')
             ->perform($request->input('query')); 
-            dd($searchResult);
         return view('searchResult', compact('searchResult'), ['palabra'=>$request->input('query')]);
     }
 
     public function index()
     {
         $posts=Post::all();
-        return view('search', compact('posts'));
+        return view('indexPost', compact('posts'));
     }
     /**
      * Show the form for creating a new resource.
@@ -32,7 +31,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('createPostView');
     }
 
     /**
@@ -43,7 +42,15 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title'=> 'required',
+            'body'=> 'required',
+        ]);
+
+        Post::create($request->all());
+        
+        return redirect()->route('post.index')
+                        ->with('success','Product created successfully.');
     }
 
     /**
