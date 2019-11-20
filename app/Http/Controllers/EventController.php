@@ -12,8 +12,7 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index() {
         $events = Event::latest();
         return view('events.index', compact('events'));
     }
@@ -23,8 +22,7 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    public function create() {
         return view('events.create');
     }
 
@@ -34,8 +32,7 @@ class EventController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         $request->validate([
             'title' => 'required',
             'event_date' => 'required',
@@ -55,8 +52,7 @@ class EventController extends Controller
      * @param  \App\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function show(Event $event)
-    {
+    public function show(Event $event) {
         return view('events.show', compact('event'));
     }
 
