@@ -10769,7 +10769,7 @@ a.text-dark:focus {
 
 #container {
   height: 200px;
-  width: 80%;
+  width: 60%;
 }
 
 a {
@@ -10782,6 +10782,15 @@ a {
 a:hover {
   color: black;
   text-decoration: none;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 button {
