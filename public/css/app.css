@@ -10672,24 +10672,24 @@ a.text-dark:focus {
 
 .btn-primary {
   color: white;
-  background-color: tomato;
-  border-color: tomato;
+  background-color: #ff0751;
+  border-color: #ff0751;
 }
 
 .btn-link {
-  color: tomato;
+  color: #ff0751;
 }
 
 .navbar {
-  background-color: gray !important;
+  background-color: #eeeeee !important;
 }
 
 .navbar-brand {
-  color: tomato !important;
+  color: #ff0751 !important;
 }
 
 .nav-link {
-  color: tomato !important;
+  color: #ff0751 !important;
 }
 
 #fakebox-container {
@@ -10721,11 +10721,11 @@ a.text-dark:focus {
 }
 
 .fakebox-search-icon i.fas.fa-search {
-  color: black;
+  color: #ffffff;
 }
 
 #fakebox-input {
-  background: tomato;
+  background: #ff0751;
   border-radius: 40px;
   border: 0;
   box-shadow: 0 1px 6px #42051347;
@@ -10821,13 +10821,13 @@ button {
 }
 
 .card {
-  background-color: black;
-  border: 1px solid tomato;
+  background-color: #ffffff;
+  border: 1px solid #ff0751;
   height: 200px;
 }
 
 .card-header {
   background-color: #fd024e08;
-  border-bottom: 1px solid tomato;
+  border-bottom: 1px solid #ff0751;
 }
 
