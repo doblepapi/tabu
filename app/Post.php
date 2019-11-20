@@ -11,7 +11,7 @@ use Spatie\Searchable\SearchResult;
 
 class Post extends Model implements Searchable
 {
-    protected $filable=['title','body'];
+    protected $fillable=['title','body'];
 
     public function getSearchResult():SearchResult
     {
