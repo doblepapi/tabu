@@ -1,33 +1,39 @@
-#definicion{
+#definicion {
     background-color: $indigo;
 }
-#lugares{
+
+#lugares {
     background-color: $orange;
 }
-#eventos{
+
+#eventos {
     background-color: $red;
 }
-#blog{
+
+#blog {
     background-color: $yellow;
 }
-#articulos{
+
+#articulos {
     background-color: $blue;
 }
-#sexo{
+
+#sexo {
     background-color: $green;
 }
-#container{
+
+#container {
     height: 200px;
     width: 60%;  
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
     text-decoration-color: none;
 }
 
-a:hover{
+a:hover {
     color: black;
     text-decoration: none;
 }

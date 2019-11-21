@@ -37187,7 +37187,7 @@ var render = function() {
             { staticClass: "modal-header" },
             [
               _vm._t("header", [
-                _vm._v("\n              default header\n            ")
+                _vm._v("\r\n              default header\r\n            ")
               ])
             ],
             2
@@ -37198,7 +37198,7 @@ var render = function() {
             { staticClass: "modal-body" },
             [
               _vm._t("body", [
-                _vm._v("\n              default body\n            ")
+                _vm._v("\r\n              default body\r\n            ")
               ])
             ],
             2
@@ -37219,7 +37219,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("\n                OK\n              ")]
+                  [_vm._v("\r\n                OK\r\n              ")]
                 )
               ])
             ],
