@@ -7,10 +7,10 @@
       <div id="app">
         <div id="definicion" class="col align-self-center card" @click="showModal = true">Definicion</div>
       </div>
-    <div id="lugares" class="col align-self-center card" href={{"/map"}}> Lugares</a></div>
-    <div id="eventos" class="col align-self-center card"><a href={{"/"}}>Eventos</a></div>
-    <div id="blog" class="col align-self-center card"><a href={{"/"}}>Blog</a></div>
-    <div id="articulos" class="col align-self-center card"><a href={{"/"}}>Articulos</a></div>
+    <div id="lugares" class="col align-self-center card"><a href={{"/map"}}> Lugares</a></div>
+    <div id="eventos" class="col align-self-center card"><a href={{"/events"}}>Eventos</a></div>
+    <div id="blog" class="col align-self-center card"><a href={{"/blog"}}>Blog</a></div>
+    <div id="articulos" class="col align-self-center card"><a href={{"/articles"}}>Articulos</a></div>
     </div>
   </div>
   
