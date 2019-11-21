@@ -17,6 +17,7 @@ class CreateEventsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->date('event_date');
+            $table->time('hour');
             $table->string('location');
             $table->integer('value');
             $table->text('description');

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('events.create') }}"> Create New Event</a>
+                <a class="btn btn-success" href="{{ route('events.create') }}"> Eventos</a>
             </div>
         </div>
     </div>
@@ -17,25 +17,28 @@
    
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Details</th>
-            <th width="280px">Action</th>
+            <th>Título</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Local</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+            <th width="280px"></th>
         </tr>
         @foreach ($events as $event)
         <tr>
-            <td>{{ ++$i }}</td>
             <td>{{ $event->title }}</td>
             <td>{{ $event->event_date }}</td>
+            <td>{{ $event->hour }}</td>
             <td>{{ $event->location }}</td>
             <td>{{ $event->value }}</td>
             <td>{{ $event->description }}</td>
             <td>
                 <form action="{{ route('events.destroy',$event->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ route('events.show',$event->id) }}">Show</a>
+                    <a class="btn btn-info" href="{{ route('events.show',$event->id) }}">Mostrar</a>
     
-                    <a class="btn btn-primary" href="{{ route('events.edit',$event->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('events.edit',$event->id) }}">Editar</a>
    
                     @csrf
                     @method('DELETE')
@@ -46,7 +49,5 @@
         </tr>
         @endforeach
     </table>
-  
-    {!! $events->links() !!}
       
 @endsection

@@ -13,7 +13,7 @@ class EventController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $events = Event::latest();
+        $events = Event::All();
         return view('events.index', compact('events'));
     }
 
@@ -33,17 +33,9 @@ class EventController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request) {
-        $request->validate([
-            'title' => 'required',
-            'event_date' => 'required',
-            'location' => 'required',
-            'value' => 'required'
-        ]);
-
         Event::create($request->all());
-
         return redirect()->route('events.index')
-            ->with('success', 'Event created successfully.');
+            ->with('success', 'Evento CREADO con suceso!');
     }
 
     /**
@@ -74,17 +66,9 @@ class EventController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Event $event) {
-        $request->validate([
-            'title' => 'required',
-            'event_date' => 'required',
-            'location' => 'required',
-            'value' => 'required'
-        ]);
-
         $event->update($request->all());
-
         return redirect()->route('events.index')
-            ->with('success', 'Event update successfully.');
+            ->with('success', 'Evento ACTUALIZADO con suceso!');
     }
 
     /**
@@ -95,8 +79,7 @@ class EventController extends Controller
      */
     public function destroy(Event $event) {
         $event->delete();
-
         return redirect()->route('events.index')
-            ->with('success', 'Event deleted successfully.');
+            ->with('success', 'Evento ELIMINADO con suceso!');
     }
 }
