@@ -15,7 +15,7 @@ class ArticuloController extends Controller
     public function index()
     {
         $articulos = Articulo::All();
-        return view('articleView', ["variosArticulos"=>$articulos]);
+        return view('article.index', compact('articulos'));/* ["variosArticulos"=>$articulos] */
     }
 
     /**
@@ -25,7 +25,7 @@ class ArticuloController extends Controller
      */
     public function create()
     {
-        return view('Article');
+        return view('article.create');
     }
 
     /**
@@ -64,9 +64,9 @@ class ArticuloController extends Controller
      * @param  \App\Articulo  $articulo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Articulo $articulo)
+    public function edit(Articulo $article)
     {
-        return view('adminArticleEdit', compact('articulo'));
+        return view('article.edit', compact('article'));
     }
 
     /**
@@ -85,7 +85,9 @@ class ArticuloController extends Controller
             'author'=>'required',
             'year'=>'required',
             'keyWords'=>'required', ]);
+
         $articulo->update($request->all());
+
         return redirect()->route('articles.index');
     }
 
@@ -95,8 +97,9 @@ class ArticuloController extends Controller
      * @param  \App\Articulo  $articulo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Articulo $articulo)
+    public function destroy(Articulo $article)
     {
-        //
+        $article->delete();
+        return redirect()->route('articles.index')->with('success', 'Product deleted successfully');
     }
 }
