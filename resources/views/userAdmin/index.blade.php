@@ -22,33 +22,26 @@
         <tr>
             <th>Nombre</th>
             <th>Email</th>
-            <th>Fecha verificacion del mail</th>
-            <th>Año</th>
             <th>Tipo de Usuario</th>
-            <th>Dia de creacion</th>
-            <th>Dia de actualizacion</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($articulos as $articulo)
+        @foreach ($userAdmin as $userAdmin)
         <tr>
             {{-- <td>{{ ++$i ?? '' ?? '' }}</td> --}}
-            <td>{{$articulo->name}}</td>
-            <td>{{$articulo->email}}</td>
-            <td>{{$articulo->email_verified_at}}</td>
-            <td>{{$articulo->year}}</td>
-            <td>{{$articulo->userType}}</td>
-            <td>{{$articulo->created_at}}</td>
-            <td>{{$articulo->updated_at}}</td>
+            <td>{{$userAdmin->name}}</td>
+            <td>{{$userAdmin->email}}</td>
+            <td>{{$userAdmin->userType}}</td>
+
             <td>
-                <form action="{{ route('userAdmin.destroy',$articulo->id) }}" method="POST">
+                <form action="{{ route('userAdmin.destroy',$userAdmin->id) }}" method="POST">
     
     
-                    <a class="btn btn-primary" href="{{ route('userAdmin.edit',$articulo->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('userAdmin.edit',$userAdmin->id) }}">Edit</a>
    
                     @csrf
                     @method('DELETE')
       
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    
                 </form>
             </td>
         </<td>
