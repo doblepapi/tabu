@@ -22,7 +22,7 @@ class PostController extends Controller
     public function index()
     {
         $posts=Post::all();
-        return view('indexPost', compact('posts'));
+        return view('post.index', compact('posts'));
     }
     /**
      * Show the form for creating a new resource.
@@ -31,7 +31,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('createPostView');
+        return view('post.create');
     }
 
     /**
@@ -61,7 +61,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('showPost', compact('post'));
+        return view('post.show', compact('post'));
     }
 
     /**
@@ -72,7 +72,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        return view('editPost', compact('post'));
+        return view('post.edit', compact('post'));
     }
 
     /**
