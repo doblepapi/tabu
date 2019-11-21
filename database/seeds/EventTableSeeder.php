@@ -16,7 +16,7 @@ class EventTableSeeder extends Seeder
             'hour' => '15:30',
             'location' => 'Barcelona',
             'value' => '50',
-            'description' => Str::random(100)
+            'description' => Str::random(30)
         ]);
         
     }

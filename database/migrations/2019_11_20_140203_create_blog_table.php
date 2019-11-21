@@ -19,7 +19,6 @@ class CreateBlogTable extends Migration
             $table->text('resumen');
             $table->string('link');
             $table->string('author');
-            $table->string('year');
             $table->text('keyWords');
             $table->timestamps();
         });

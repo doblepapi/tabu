@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Article</h2>
+                <h2>Edit Blog</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('blog.index') }}"> Back</a>
@@ -23,7 +23,7 @@
     @endif
 
 
-    <form action="{{ route('articles.update', $article->id) }}" method="POST">
+    <form action="{{ route('blog.update', $blog->id) }}" method="POST">
         @csrf
         @method('PUT')
    
@@ -31,56 +31,56 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Title:</strong>
-                    <input type="text" name="title" value="{{ $article->titulo }}" class="form-control" placeholder="Name">
+                    <input type="text" name="title" value="{{ $blog->titulo }}" class="form-control" placeholder="Name">
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Body:</strong>
-                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $article->resumen }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $blog->resumen }}</textarea>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Body:</strong>
-                    <textarea type="url" class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $article->link }}</textarea>
+                    <textarea type="url" class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $blog->link }}</textarea>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Body:</strong>
-                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $article->author }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $blog->author }}</textarea>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Body:</strong>
-                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $article->year }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $blog->year }}</textarea>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Body:</strong>
-                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $article->keyWords }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $blog->keyWords }}</textarea>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Body:</strong>
-                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $article->creadet_at }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $blog->creadet_at }}</textarea>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Body:</strong>
-                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $article->update_at }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="body" placeholder="Detail">{{ $blog->update_at }}</textarea>
                 </div>
             </div>
 
