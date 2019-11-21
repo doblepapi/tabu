@@ -72,7 +72,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-    //
+        return view('editPost', compact('post'));
     }
 
     /**
@@ -84,7 +84,17 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $request->validate([
+            'title'=> 'required',
+            'body'=> 'required',
+        ]);
+
+        $post->update($request->all());
+        
+        return redirect()->route('post.index')
+                        ->with('success','Product pdated successfully.');
+
+        
     }
 
     /**
@@ -95,6 +105,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect()->route('post.index')->with('success', 'Product deleted successfully');
     }
 }
