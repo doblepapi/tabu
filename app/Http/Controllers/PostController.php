@@ -23,7 +23,7 @@ class PostController extends Controller
     public function index()
     {
         $posts=Post::all();
-        return view('search', compact('posts'));
+        return view('post.index', compact('posts'));
     }
     /**
      * Show the form for creating a new resource.
@@ -32,7 +32,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('post.create');
     }
 
     /**
@@ -43,7 +43,15 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title'=> 'required',
+            'body'=> 'required',
+        ]);
+
+        Post::create($request->all());
+        
+        return redirect()->route('post.index')
+                        ->with('success','Product created successfully.');
     }
 
     /**
@@ -54,7 +62,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('searchresult', compact('searchResult'));
+        return view('post.show', compact('post'));
     }
 
     /**
@@ -65,7 +73,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-    //
+        return view('post.edit', compact('post'));
     }
 
     /**
@@ -77,7 +85,17 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $request->validate([
+            'title'=> 'required',
+            'body'=> 'required',
+        ]);
+
+        $post->update($request->all());
+        
+        return redirect()->route('post.index')
+                        ->with('success','Product pdated successfully.');
+
+        
     }
 
     /**
@@ -88,6 +106,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect()->route('post.index')->with('success', 'Product deleted successfully');
     }
 }

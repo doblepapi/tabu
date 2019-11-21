@@ -37187,7 +37187,7 @@ var render = function() {
             { staticClass: "modal-header" },
             [
               _vm._t("header", [
-                _vm._v("\r\n              default header\r\n            ")
+                _vm._v("\n              default header\n            ")
               ])
             ],
             2
@@ -37198,7 +37198,7 @@ var render = function() {
             { staticClass: "modal-body" },
             [
               _vm._t("body", [
-                _vm._v("\r\n              default body\r\n            ")
+                _vm._v("\n              default body\n            ")
               ])
             ],
             2
@@ -37219,7 +37219,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("\r\n                OK\r\n              ")]
+                  [_vm._v("\n                OK\n              ")]
                 )
               ])
             ],
@@ -49535,7 +49535,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n\n    background-color: $inputColor;\n                     ^\n      Undefined variable.\n   ╷\n27 │     background-color: $inputColor;\n   │                       ^^^^^^^^^^^\n   ╵\n  resources/sass/_register.scss 27:23  @import\n  stdin 11:9                           root stylesheet\n      in /Applications/MAMP/htdocs/SpicyBanana/tabu/resources/sass/_register.scss (line 27, column 23)\n    at runLoaders (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/webpack/lib/NormalModule.js:316:20)\n    at /Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at context.callback (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at render (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass-loader/dist/index.js:89:7)\n    at Function.call$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:54337:16)\n    at _render_closure1.call$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:33509:12)\n    at _RootZone.runBinary$3$3 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:19817:18)\n    at _RootZone.runBinary$3 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:19821:19)\n    at _FutureListener.handleError$1 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:18286:19)\n    at _Future__propagateToListeners_handleError.call$0 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:18574:40)\n    at Object._Future__propagateToListeners (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:3484:88)\n    at _Future._completeError$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:18410:9)\n    at _AsyncAwaitCompleter.completeError$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:17809:12)\n    at Object._asyncRethrow (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:3240:17)\n    at /Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:10537:20\n    at _wrapJsFunctionForAsync_closure.$protected (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:3263:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:17830:12)\n    at _awaitOnObject_closure0.call$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:17822:25)\n    at _RootZone.runBinary$3$3 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:19817:18)\n    at _RootZone.runBinary$3 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:19821:19)\n    at _FutureListener.handleError$1 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:18286:19)\n    at _Future__propagateToListeners_handleError.call$0 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:18574:40)\n    at Object._Future__propagateToListeners (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:3484:88)\n    at _Future._completeError$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:18410:9)\n    at _AsyncAwaitCompleter.completeError$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:17809:12)\n    at Object._asyncRethrow (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:3240:17)\n    at /Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:12240:20\n    at _wrapJsFunctionForAsync_closure.$protected (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:3263:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:17830:12)\n    at _awaitOnObject_closure0.call$2 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:17822:25)\n    at _RootZone.runBinary$3$3 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:19817:18)\n    at _RootZone.runBinary$3 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:19821:19)\n    at _FutureListener.handleError$1 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:18286:19)\n    at _Future__propagateToListeners_handleError.call$0 (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:18574:40)\n    at Object._Future__propagateToListeners (/Applications/MAMP/htdocs/SpicyBanana/tabu/node_modules/sass/sass.dart.js:3484:88)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -49546,13 +49546,8 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! /Applications/MAMP/htdocs/SpicyBanana/tabu/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/SpicyBanana/tabu/resources/sass/app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! C:\xampp\htdocs\tabu\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\tabu\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> 3d1570327808b8e20d37a9e374b32f6b3018d6fc
 
 
 /***/ })
