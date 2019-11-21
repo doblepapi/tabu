@@ -61,7 +61,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('searchresult', compact('searchResult'));
+        return view('showPost', compact('post'));
     }
 
     /**
