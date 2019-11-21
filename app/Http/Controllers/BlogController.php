@@ -2,20 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Articulo;
 use Illuminate\Http\Request;
+use App\Blog;
 
-class ArticuloController extends Controller
+class BlogController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    //   /*** Display a listing of the resource. @return \Illuminate\Http\Response
+   
     public function index()
-    {
-        $articulos = Articulo::All();
-        return view('articleView', ["variosArticulos"=>$articulos]);
+    {   
+        $blog = Blog::all();
+        //dd($blog);
+        return view('blogView', ["variosArticulosBlog"=>$blog]);
     }
 
     /**
@@ -25,7 +23,7 @@ class ArticuloController extends Controller
      */
     public function create()
     {
-        return view('Article');
+        return view('blogView');
     }
 
     /**
@@ -36,15 +34,7 @@ class ArticuloController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'titulo'=>'required', 
-            'resumen'=>'required',
-            'link'=>'required',
-            'author'=>'required',
-            'year'=>'required',
-            'keyWords'=>'required', ]);
-        Articulo::create($request->all());
-        return redirect()->route('articles.index');
+        //
     }
 
     /**
@@ -55,7 +45,7 @@ class ArticuloController extends Controller
      */
     public function show(Articulo $articulo)
     {
-       
+        //
     }
 
     /**
@@ -66,7 +56,7 @@ class ArticuloController extends Controller
      */
     public function edit(Articulo $articulo)
     {
-        return view('adminArticleEdit', compact('articulo'));
+        //
     }
 
     /**
@@ -78,15 +68,7 @@ class ArticuloController extends Controller
      */
     public function update(Request $request, Articulo $articulo)
     {
-        $request->validate([
-            'titulo'=>'required', 
-            'resumen'=>'required',
-            'link'=>'required',
-            'author'=>'required',
-            'year'=>'required',
-            'keyWords'=>'required', ]);
-        $articulo->update($request->all());
-        return redirect()->route('articles.index');
+        //
     }
 
     /**

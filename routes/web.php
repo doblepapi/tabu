@@ -11,21 +11,25 @@
 |
 */
 
+
+/* 
 Route::get('/', function () {
     return view('search');
 });
-
+ */
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->middleware('isadmin');
 
 
-Route::get('/admin', function () {
+/* Route::get('/admin', function () {
 	return view('adminView');
-});
+}); */
 
 Route::resource('/articles', 'ArticuloController');
+
+Route::resource('/blog', 'BlogController');
 
 Route::post('/searchIo', 'PostController@search');
 
