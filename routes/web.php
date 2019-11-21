@@ -31,6 +31,8 @@ Route::resource('/articles', 'ArticuloController');
 
 Route::resource('/blog', 'BlogController');
 
+Route::resource('/userAdmin', 'UserAdminController');
+
 Route::post('/searchIo', 'PostController@search');
 
 Route::get('/results', 'PostController@show')->name('searchIo');
