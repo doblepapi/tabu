@@ -14,7 +14,8 @@ class ArticuloController extends Controller
      */
     public function index()
     {
-        //
+        $articulos = Articulo::All();
+        return view('articleView', ["variosArticulos"=>$articulos]);
     }
 
     /**
@@ -24,7 +25,7 @@ class ArticuloController extends Controller
      */
     public function create()
     {
-        //
+        return view('Article');
     }
 
     /**

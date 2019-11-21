@@ -37187,7 +37187,7 @@ var render = function() {
             { staticClass: "modal-header" },
             [
               _vm._t("header", [
-                _vm._v("\n              default header\n            ")
+                _vm._v("\r\n              default header\r\n            ")
               ])
             ],
             2
@@ -37198,7 +37198,7 @@ var render = function() {
             { staticClass: "modal-body" },
             [
               _vm._t("body", [
-                _vm._v("\n              default body\n            ")
+                _vm._v("\r\n              default body\r\n            ")
               ])
             ],
             2
@@ -37219,7 +37219,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("\n                OK\n              ")]
+                  [_vm._v("\r\n                OK\r\n              ")]
                 )
               ])
             ],
@@ -49546,8 +49546,13 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! /Users/doble_papi/Documents/Tabu/Tabu/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /Users/doble_papi/Documents/Tabu/Tabu/resources/sass/app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! C:\xampp\htdocs\tabu\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\tabu\resources\sass\app.scss */"./resources/sass/app.scss");
+>>>>>>> develop
 
 
 /***/ })

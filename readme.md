@@ -13,7 +13,7 @@ php artisan  key:generate
 
 Now you are ready to go.
 
-Best regards, Manuela, Natalia, Jaison, Isa and Nuria
+Regards, Nuria
 
 
 

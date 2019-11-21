@@ -10,7 +10,7 @@
             <div class="fakebox-search-icon">
                 <i class="fas fa-search"></i>
             </div>
-            <input type="search" placeholder="Busca en Tabu" class="form-control" name="query" id="fakebox-input" autocomplete="off">
+            <input type="search" placeholder="Busca en Tabu" class="form-control busca" name="query" id="fakebox-input" autocomplete="off">
             </form>
     
     </div>
