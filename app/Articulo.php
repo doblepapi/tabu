@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Articulo extends Model
 {
-    protected $filable=['title','resumen'];
+    protected $fillable=['titulo','resumen','link', 'author', 
+    'year', 'keyWords', 'created_at','updated_at' ];
 }

@@ -36,7 +36,15 @@ class ArticuloController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'titulo'=>'required', 
+            'resumen'=>'required',
+            'link'=>'required',
+            'author'=>'required',
+            'year'=>'required',
+            'keyWords'=>'required', ]);
+        Articulo::create($request->all());
+        return redirect()->route('articles.index');
     }
 
     /**
@@ -47,7 +55,7 @@ class ArticuloController extends Controller
      */
     public function show(Articulo $articulo)
     {
-        //
+       
     }
 
     /**
@@ -58,7 +66,7 @@ class ArticuloController extends Controller
      */
     public function edit(Articulo $articulo)
     {
-        //
+        return view('adminArticleEdit', compact('articulo'));
     }
 
     /**
@@ -70,7 +78,15 @@ class ArticuloController extends Controller
      */
     public function update(Request $request, Articulo $articulo)
     {
-        //
+        $request->validate([
+            'titulo'=>'required', 
+            'resumen'=>'required',
+            'link'=>'required',
+            'author'=>'required',
+            'year'=>'required',
+            'keyWords'=>'required', ]);
+        $articulo->update($request->all());
+        return redirect()->route('articles.index');
     }
 
     /**

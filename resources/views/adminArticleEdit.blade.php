@@ -1,12 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
-    <h1>Hola administrador /Artículo !!!</h1>
+<h1>Imprimo Articulo Editado</h1>
 
-    <h3>Introducir aquí los datos para crear, editar o borrar un artículo</h3>
-    <form action="{{route('articles.store')}}" method="POST">
+<form action="{{route('articles.update',$articulo->id)}}" method="PUT">
         @csrf
-        @method("POST")
+        @method("PUT")
     <tr>
     <td>Titulo del articulo</td>&nbsp&nbsp<td><input type="text" class ="busca" id = "title" name="titulo"value="escribe el titulo"/></td></br>
     <td>Resumen del artículo</td>&nbsp&nbsp<td><input type="text" class ="busca" name="resumen" id= "resumenArticulo" value="pega el resumen del artículo"/></td></br>

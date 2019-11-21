@@ -11,19 +11,21 @@
 |
 */
 
+
+/* 
 Route::get('/', function () {
     return view('search');
 });
-
+ */
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->middleware('isadmin');
 
 
-Route::get('/admin', function () {
+/* Route::get('/admin', function () {
 	return view('adminView');
-});
+}); */
 
 Route::resource('/articles', 'ArticuloController');
 
@@ -33,10 +35,11 @@ Route::post('/searchIo', 'PostController@search');
 
 Route::get('/results', 'PostController@show')->name('searchIo');
 
-Route::get('/definicion, PostController@show')->name('');
+// Route::get('/definicion, PostController@show')->name('emptydefinicion');
 
 Route::get('/search','PostController@index');
-
+/* 
 Route::get('/map', function () {
 	return view('map');
 });
+ */
