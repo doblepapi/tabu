@@ -10681,7 +10681,7 @@ a.text-dark:focus {
 }
 
 .navbar {
-  background-color: #eeeeee !important;
+  background-color: #fafafa !important;
 }
 
 .navbar-brand {
@@ -10704,7 +10704,7 @@ a.text-dark:focus {
 }
 
 .fakebox {
-  max-width: 663px;
+  max-width: 500px;
   margin: auto;
   position: relative;
 }
@@ -10721,17 +10721,17 @@ a.text-dark:focus {
 }
 
 .fakebox-search-icon i.fas.fa-search {
-  color: #ffffff;
+  color: #fafafa;
 }
 
 #fakebox-input {
   background: #ff0751;
-  border-radius: 40px;
+  border-radius: 30px;
   border: 0;
   box-shadow: 0 1px 6px #42051347;
-  height: 54px;
+  height: 55px;
   opacity: 1;
-  padding-left: 66px;
+  padding-left: 70px;
 }
 
 .busca {
@@ -10807,12 +10807,13 @@ button {
 }
 
 .busca {
-  color: black;
+  color: #ffffff;
+  font-size: 30px;
 }
 
-.busca::-webkit-input-placeholder,
-.busca:focus-within {
-  color: #f66d9b;
+.busca::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.7;
 }
 
 .py-4.content {
@@ -10821,9 +10822,9 @@ button {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #fafafa;
   border: 1px solid #ff0751;
-  height: 200px;
+  height: auto;
 }
 
 .card-header {

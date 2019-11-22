@@ -1,4 +1,4 @@
-button{
+button {
     border: 2px solid black;
     background-color: $pink;
     margin: 10px;
@@ -9,12 +9,13 @@ button{
     width: 150px;
     height: 150px;
     border-radius: 10px;
-    
 }
 
-.busca{
-    color:black;
-    &::-webkit-input-placeholder, &:focus-within{
-        color:$pink;
+.busca {
+    color: #ffffff;
+    font-size: 30px;
+    &::-webkit-input-placeholder {
+        color: #ffffff;
+        opacity: 0.7;
     }
 }

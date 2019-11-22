@@ -1,19 +1,20 @@
 .selection-interest {
     font-family: 'Montserrat', sans-serif;
-
-    
 }
-.form-check{
+
+.form-check {
     position: relative;
     display: block;
     padding-left: 5.25rem;
     top: 9px;
 }
-.offset-md-4{
+
+.offset-md-4 {
     margin: 5px;
     left: 310px;
 }
-.intereses{
+
+.intereses {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -21,14 +22,14 @@
         min-width: 100px;
     }
 }
-.btn-primary{
 
+.btn-primary {
     color: white;
     background-color: $inputColor;
     border-color: $inputColor;
 }
-.btn-link{
-    color: $inputColor;
 
+.btn-link {
+    color: $inputColor;
 }
 
