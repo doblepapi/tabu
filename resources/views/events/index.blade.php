@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Definition</h2>
+                <h2>Eventos</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('post.create') }}"> Create New Definition</a>
+                <a class="btn btn-success" href="{{ route('events.create') }}"> Create New Event</a>
             </div>
         </div>
     </div>
